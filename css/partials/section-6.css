@@ -1,0 +1,97 @@
+.contato {
+    width: 100%;
+    padding: 100px 10%;
+    background: #f9f9f9;
+}
+
+.h2-titulo-contato {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    color: #003c78;
+    padding: 0 0 100px 0;
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contato-mapa {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contato-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-formulario h2,
+.contato-info h2 {
+    color: #003c78;
+    padding: 0 0 10px 0;
+}
+
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contato-formulario textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contato-formulario button {
+    background: #003c78;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contato-formulario button:hover {
+    background: #0055a4;
+}
+
+.contato-info p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.contato-info a {
+    color: #003c78;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+}

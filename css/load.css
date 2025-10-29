@@ -1,0 +1,49 @@
+/* Loader wrapper */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+/* Top e bottom */
+.loader-top,
+.loader-bottom {
+    width: 100%;
+    height: 50%;
+    transition: transform 1s ease-in-out, height 1s ease-in-out;
+}
+
+.loader-top {
+    background: #003c78;
+    /* azul */
+}
+
+.loader-bottom {
+    background: #ffd200;
+    /* amarelo */
+}
+
+/* Contador central */
+.loader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#loader-counter {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    transition: opacity 0.5s ease;
+    /* <<--- novo */
+}

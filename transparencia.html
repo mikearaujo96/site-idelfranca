@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal da Transparência — Instituto Hand Maria</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/logos/logo-com-fundo.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/logos/logo-com-fundo.svg">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/transparencia-popup.css">
+
+  <script src="js/navMenu.js" defer></script>
+  <script src="js/transparencia.js" defer></script>
+  <script src="js/rodape.js" defer></script>
+  <script src="js/transparencia-popup.js" defer></script>
+</head>
+
+<body>
+  <!-- Menu -->
+  <header id="insert-menu"></header>
+
+  <main class="transparencia-container">
+    <!-- Hero -->
+    <section class="transparencia-hero">
+      <h1>Portal da Transparência</h1>
+      <p>Aqui você encontra relatórios, termos de fomento e informações financeiras do Instituto Hand Maria.</p>
+    </section>
+
+    <!-- Relatórios anuais -->
+    <section class="transparencia-section">
+      <h2>Relatórios Anuais</h2>
+      <ul id="lista-relatorios" class="transparencia-lista">
+        <!-- preenchido via JS -->
+      </ul>
+    </section>
+
+    <!-- Termos de Fomento -->
+    <section class="transparencia-section">
+      <h2>Termos de Fomento e Convênios</h2>
+      <ul id="lista-termos" class="transparencia-lista">
+        <!-- preenchido via JS -->
+      </ul>
+    </section>
+
+    <!-- Prestação de contas -->
+    <section class="transparencia-section">
+      <h2>Prestação de Contas</h2>
+      <table class="tabela-contas" id="tabela-contas">
+        <thead>
+          <tr>
+            <th>Ano</th>
+            <th>Receitas (R$)</th>
+            <th>Despesas (R$)</th>
+            <th>Saldo (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- preenchido via JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="insert-radape"></footer>
+</body>
+
+</html>

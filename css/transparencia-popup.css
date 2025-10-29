@@ -1,0 +1,51 @@
+/* Instituto Hand Maria — Popup Transparência (estilos) */
+.ihmT-modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.36);
+  display: none; align-items: center; justify-content: center;
+  z-index: 9999; padding: 24px;
+}
+.ihmT-modal-backdrop.is-open { display: flex; }
+
+.ihmT-modal {
+  width: 100%; max-width: 560px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.2);
+  overflow: hidden; transform: translateY(12px); opacity: 0;
+  transition: transform .25s ease, opacity .25s ease;
+  outline: none;
+}
+.ihmT-modal-backdrop.is-open .ihmT-modal { transform: translateY(0); opacity: 1; }
+
+.ihmT-header {
+  background: #003c78; color: #fff;
+  padding: 16px 20px; display: flex; align-items: center; gap: 10px;
+}
+.ihmT-badge {
+  background: #FFCA00; color: #003c78;
+  font-weight: 700; font-size: 12px; letter-spacing: .08em;
+  padding: 6px 10px; border-radius: 999px; text-transform: uppercase;
+}
+.ihmT-title { margin: 0; font-size: 19px; font-weight: 700; line-height: 1.2; }
+
+.ihmT-close {
+  margin-left: auto; background: transparent; border: none; color: #fff;
+  font-size: 28px; line-height: 1; cursor: pointer; padding: 4px 8px; border-radius: 8px;
+}
+.ihmT-close:hover { background: rgba(255,255,255,.12); }
+
+.ihmT-body { padding: 20px 22px; color: #2a2a2a; line-height: 1.6; }
+.ihmT-body p { margin: 0 0 12px; }
+
+.ihmT-actions {
+  display: flex; gap: 10px; padding: 0 22px 22px; flex-wrap: wrap;
+}
+.ihmT-btn {
+  border: 0; cursor: pointer; border-radius: 10px;
+  padding: 12px 18px; font-weight: 600; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.ihmT-btn--primary { background: #003c78; color: #fff; }
+.ihmT-btn--outline { background: #fff; color: #003c78; border: 2px solid #003c78; }
+.ihmT-btn:focus-visible { outline: 3px solid #FFCA00; outline-offset: 2px; }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrições — Associação Irmã Idelfranca</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/logos/logo-idelfranca.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/logos/logo-idelfranca.svg">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/navMenu.js" defer></script>
+  <script src="js/inscricoes.js" defer></script>
+  <script src="js/rodape.js" defer></script>
+</head>
+
+<body>
+  <!-- Menu -->
+  <header id="insert-menu"></header>
+
+  <main class="inscricoes-container">
+    <!-- Hero -->
+    <section class="inscricoes-hero">
+      <h1>Participe dos nossos projetos futuros</h1>
+      <p>Confira abaixo os projetos disponíveis, datas e vagas para voluntariado e inscrições.</p>
+    </section>
+
+    <!-- Lista de projetos -->
+    <section class="projetos-lista" id="projetos-lista">
+      <!-- Os cards dos projetos serão inseridos via JS -->
+    </section>
+
+    <!-- Modal de inscrição -->
+    <div id="inscricao-modal" class="inscricao-modal">
+      <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <h2>Inscreva-se</h2>
+        <form id="form-inscricao">
+          <input type="hidden" id="projeto-id">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" required>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar Inscrição</button>
+        </form>
+        <p id="msg-status"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="insert-radape"></footer>
+</body>
+
+</html>

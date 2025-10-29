@@ -1,0 +1,178 @@
+.apoiar-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.apoiar-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #003c78, #0055a4);
+  color: #fff;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+.apoiar-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.apoiar-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn-primario {
+  display: inline-block;
+  background: #ffcc00;
+  color: #003c78;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background .3s;
+}
+.btn-primario:hover {
+  background: #e6b800;
+}
+
+/* Formas de apoio */
+.apoio-formas {
+  margin: 60px 0;
+}
+.apoio-formas h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #003c78;
+}
+.apoio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.apoio-card {
+  background: #fff;
+  border: 1px solid #e5edf6;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.apoio-card span {
+  font-size: 40px;
+  color: #003c78;
+  margin-bottom: 12px;
+}
+.apoio-card h3 {
+  margin: 10px 0;
+  color: #003c78;
+}
+.apoio-card p {
+  font-size: 14px;
+  color: #555;
+}
+.apoio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
+}
+
+/* Impacto */
+.apoio-impacto {
+  text-align: center;
+  margin: 60px 0;
+}
+.apoio-impacto h2 {
+  margin-bottom: 40px;
+  color: #003c78;
+}
+.impacto-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.impacto-item h3 {
+  font-size: 2rem;
+  color: #003c78;
+}
+.impacto-item p {
+  color: #555;
+}
+
+/* Depoimentos */
+.apoio-depoimentos {
+  margin: 60px 0;
+}
+.apoio-depoimentos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #003c78;
+}
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.depoimento-card {
+  background: #fff;
+  border: 1px solid #e5edf6;
+  border-radius: 12px;
+  padding: 20px;
+  font-style: italic;
+  transition: transform .3s ease, box-shadow .3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.depoimento-card span {
+  display: block;
+  margin-top: 12px;
+  color: #003c78;
+  font-weight: bold;
+}
+.depoimento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
+}
+
+/* CTA final */
+.apoio-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #003c78;
+  color: #fff;
+  border-radius: 12px;
+  margin: 60px 0;
+}
+.apoio-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.apoio-cta p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Animações com IntersectionObserver */
+.reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity .8s ease, transform .8s ease;
+}
+.titulo-animado {
+  position: relative;
+  display: inline-block;
+}
+.titulo-animado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: currentColor;
+  transition: width .6s ease;
+}
+.reveal .titulo-animado::after {
+  width: 100%;
+}

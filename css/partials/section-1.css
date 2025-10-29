@@ -1,0 +1,198 @@
+.section-fazemos {
+    padding: 80px 5%;
+    background: #fff;
+    text-align: center;
+    color: #333;
+}
+
+.titulo-fazemos {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.titulo-fazemos h2 {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: end;
+    margin-bottom: 15px;
+    width: 40%;
+}
+
+.titulo-fazemos h2 span {
+    color: #003c78;
+    /* azul destaque */
+}
+
+.titulo-fazemos div {
+    width: 50%;
+    text-align: start;
+}
+
+.titulo-fazemos div p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.titulo-fazemos div .btn {
+    background: #003c78;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-fazemos div span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.titulo-fazemos div .btn:hover {
+    background: #fff;
+    color: #003c78;
+    border: 1px solid #003c78;
+}
+
+.titulo-fazemos div .btn:hover span {
+    transform: rotate(-45deg);
+}
+
+/* Cards */
+.cards-fazemos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card:hover {
+    border: 1px solid #003c78;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+    transition: border 0.5s linear, transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #003c78;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.card .btn {
+    background: #003c78;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .btn span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.card .btn:hover {
+    background: #fff;
+    color: #003c78;
+    border: 1px solid #003c78;
+}
+
+.card .btn:hover span {
+    transform: rotate(-45deg);
+}
+
+/* Animações - Sessão Fazemos */
+.titulo-fazemos h2,
+.titulo-fazemos div p,
+.titulo-fazemos .btn,
+.cards-fazemos .card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+/* Responsivo */
+@media (max-width: 992px) {
+
+    .titulo-fazemos {
+        max-width: 100%;
+        margin: 0 auto 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-fazemos h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo-fazemos div {
+        width: 100%;
+    }
+
+    .cards-fazemos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-fazemos .card {
+        flex: 1 1 auto;
+    }
+}

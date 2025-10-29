@@ -1,0 +1,237 @@
+/* Container principal */
+.impacto-container {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    /* espaço entre as colunas */
+}
+
+/* Colunas */
+.impacto-container .parte-1 {
+    width: 70%;
+}
+
+/* Hero */
+.impacto-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.impacto-hero h1 {
+    font-size: 2.2rem;
+    color: #003c78;
+    margin-bottom: 12px;
+}
+
+.impacto-hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+
+/* Números */
+.impacto-numeros {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.numero-card {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e5edf6;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.numero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
+}
+
+.numero-card h2 {
+    font-size: 2rem;
+    color: #003c78;
+}
+
+.numero-card p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Linha do tempo */
+.impacto-linha-tempo {
+    margin-bottom: 60px;
+}
+
+.impacto-linha-tempo h2 {
+    color: #003c78;
+    margin-bottom: 20px;
+}
+
+.impacto-linha-tempo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.impacto-linha-tempo li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Histórias */
+.impacto-historias {
+    width: 30%;
+}
+
+.impacto-historias h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003c78;
+}
+
+.historias-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.historia-card {
+    background: #fff;
+    border: 1px solid #e5edf6;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.historia-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
+}
+
+.historia-topo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.historia-topo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.historia-topo h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #003c78;
+}
+
+.avaliacao {
+    display: flex;
+    gap: 2px;
+}
+
+.avaliacao img {
+    width: 25px;
+    height: 25px;
+}
+
+.historia-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .impacto-container {
+        flex-direction: column;
+        padding: 0 10px;
+        /* vira colunas */
+    }
+
+    .impacto-container .parte-1,
+    .impacto-historias {
+        width: 100%;
+        /* ocupa toda a largura */
+    }
+}
+
+/* Ajustes nos números (grid responsivo) */
+.impacto-numeros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.numero-card {
+    flex: 1 1 calc(25% - 20px);
+    /* até 4 por linha */
+    min-width: 200px;
+}
+
+
+/* Animações com IntersectionObserver */
+.numero-card,
+.historia-card,
+.impacto-hero h1,
+.impacto-hero p,
+.impacto-linha-tempo li,
+.impacto-historias h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.titulo-animado {
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-animado::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: currentColor;
+    transition: width .6s ease;
+}
+
+.reveal .titulo-animado::after {
+    width: 100%;
+}
+
+
+
+
+/* Em tablets */
+@media (max-width: 768px) {
+    .numero-card {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 por linha */
+    }
+}
+
+/* Em celulares */
+@media (max-width: 480px) {
+    .numero-card {
+        flex: 1 1 100%;
+        /* 1 por linha */
+    }
+}

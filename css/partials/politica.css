@@ -1,0 +1,39 @@
+.politica-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.politica-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.politica-hero h1 {
+  font-size: 2.2rem;
+  color: #003c78;
+  margin-bottom: 12px;
+}
+.politica-hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.politica-section {
+  margin-bottom: 30px;
+}
+.politica-section h2 {
+  color: #003c78;
+  margin-bottom: 10px;
+}
+.politica-section p, 
+.politica-section ul {
+  font-size: 15px;
+  color: #444;
+}
+.politica-section ul {
+  padding-left: 20px;
+  list-style: disc;
+}

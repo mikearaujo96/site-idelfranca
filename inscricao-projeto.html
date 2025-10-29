@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Projeto — Instituto Hand Maria</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logos/logo-com-fundo.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/logos/logo-com-fundo.svg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navMenu.js" defer></script>
+    <script src="js/inscricao-projeto.js" defer></script>
+    <script src="js/rodape.js" defer></script>
+</head>
+
+<body>
+    <header id="insert-menu"></header>
+
+
+    <main>
+
+        <!-- Banner no topo -->
+        <div class="projeto-banner">
+            <img id="projeto-banner-img" src="" alt="">
+        </div>
+
+        <div class="projeto-container">
+            <!-- Coluna esquerda -->
+            <section id="projeto-detalhes">
+                <h1 id="projeto-titulo"></h1>
+
+                <div class="projeto-meta">
+                    <span class="pill pill--data" id="pill-data"></span>
+                    <span class="pill pill--local" id="pill-local"></span>
+                </div>
+
+                <div class="descricao" id="projeto-descricao"></div>
+            </section>
+
+            <!-- Coluna direita: Vagas + Formulário -->
+            <aside>
+                <div class="vagas-box">
+                    <h2>Vagas</h2>
+
+                    <div class="vagas-kpis">
+                        <div class="kpi">
+                            <div class="kpi-label">Totais</div>
+                            <div class="kpi-valor" id="kpi-totais">0</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="kpi-label">Ocupadas</div>
+                            <div class="kpi-valor" id="kpi-ocupadas">0</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="kpi-label">Restantes</div>
+                            <div class="kpi-valor" id="kpi-restantes">0</div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-top">
+                            <span>Ocupação</span>
+                            <span class="pct" id="pct-label">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+                        </div>
+                        <div class="vagas-status" id="vagas-status"></div>
+                    </div>
+                </div>
+
+
+                <section id="projeto-formulario">
+                    <h2>Inscreva-se</h2>
+                    <form id="form-inscricao">
+                        <input type="hidden" id="projeto-id">
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" id="whatsapp" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="date" id="nascimento" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco">
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar inscrição</button>
+                    </form>
+
+                    <p id="msg-status"></p>
+                </section>
+
+            </aside>
+        </div>
+
+
+    </main>
+
+
+    <footer id="insert-radape"></footer>
+</body>
+
+</html>

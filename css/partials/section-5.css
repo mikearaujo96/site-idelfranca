@@ -1,0 +1,109 @@
+.section-parceiros {
+  width: 100%;
+  overflow: hidden;
+  background: #003c78;
+  padding: 100px 0;
+}
+
+.titulo-parceiros {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-parceiros h2 {
+  font-size: 46px;
+  font-weight: 600;
+  text-align: end;
+  margin-bottom: 15px;
+  width: 40%;
+  color: #ffd200;
+}
+
+
+.titulo-parceiros h2 span {
+  color: #fff;
+}
+
+.titulo-parceiros div {
+  width: 50%;
+  text-align: start;
+  padding-top: 10px;
+}
+
+
+.titulo-parceiros div p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+/* Carrossel Parceiros */
+.carrossel-parceiros {
+  width: 100%;
+  overflow: hidden;
+}
+
+.faixa-parceiros {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: deslizar 25s linear infinite;
+}
+
+.faixa-parceiros img {
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.faixa-parceiros img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+  /* percorre metade, pois duplicamos as logos */
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+
+  .titulo-parceiros {
+    max-width: 100%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo-parceiros h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titulo-parceiros div {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .titulo-parceiros div p {
+    text-align: justify;
+  }
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post — Instituto Hand Maria</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/logos/logo-com-fundo.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/logos/logo-com-fundo.svg">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/navMenu.js" defer></script>
+  <script src="js/api-post-page.js" defer></script>
+  <script src="js/rodape.js" defer></script>
+</head>
+
+<body>
+  <!-- Menu -->
+  <header id="insert-menu"></header>
+
+  <main class="post-container">
+    <!-- Post -->
+    <article id="post" class="post">
+      <div class="post-header">
+        <h1 id="post-title"></h1>
+        <div class="post-meta">
+          <span id="post-date"></span> • <span id="post-author"></span>
+        </div>
+      </div>
+
+      <div id="post-content" class="post-content"></div>
+
+      <!-- Compartilhar -->
+      <div class="post-share">
+        <h3>Compartilhe:</h3>
+        <div class="share-buttons">
+          <a id="share-facebook" target="_blank"><img src="assets/images/facebook.png" alt="Facebook"></a>
+          <a id="share-twitter" target="_blank"><img src="assets/images/twitter.png" alt="Twitter"></a>
+          <a id="share-linkedin" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+          <a id="share-whatsapp" target="_blank"><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
+          <a id="share-instagram" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Relacionados -->
+    <section class="relacionados">
+      <h2>Posts relacionados</h2>
+      <div id="relacionados-cards" class="grid-relacionados"></div>
+    </section>
+  </main>
+
+  <!-- Lightbox (para galeria) -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+  </div>
+
+  <!-- Rodapé -->
+  <footer id="insert-radape"></footer>
+</body>
+
+</html>
