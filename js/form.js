@@ -2,7 +2,7 @@
   const form = document.getElementById("form-contato");
   if (!form) return;
 
-  const ENDPOINT = "https://api.institutohandmaria.org/wp-json/ihm/v1/contato";
+  const ENDPOINT = "https://api.irmaidelfranca.org/wp-json/ihm/v1/contato";
   const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector("button");
   const statusBoxId = "contato-status";
   let statusBox = document.getElementById(statusBoxId);

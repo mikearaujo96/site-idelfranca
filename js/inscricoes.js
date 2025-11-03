@@ -1,4 +1,4 @@
-const API_BASE = "https://api.institutohandmaria.org/wp-json/ihm/v1";
+const API_BASE = "https://api.irmaidelfranca.org/wp-json/ihm/v1";
 const lista = document.getElementById("projetos-lista");
 
 // Formata data no padrão DD/MM/AAAA

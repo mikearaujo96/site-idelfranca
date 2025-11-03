@@ -2,7 +2,7 @@ const postsContainer = document.getElementById("posts-container");
 
 async function loadPosts() {
   try {
-    const response = await fetch("https://api.associacaoidelfranca.org/wp-json/wp/v2/posts?per_page=3&_embed");
+    const response = await fetch("https://api.irmaidelfranca.org/wp-json/wp/v2/posts?per_page=3&_embed");
     const posts = await response.json();
 
     postsContainer.innerHTML = posts.map(post => {

@@ -1,4 +1,4 @@
-const API_BASE = "https://api.institutohandmaria.org/wp-json/ihm/v1";
+const API_BASE = "https://api.irmaidelfranca.org/wp-json/ihm/v1";
 const urlParams = new URLSearchParams(window.location.search);
 const projetoId = urlParams.get("id");
 

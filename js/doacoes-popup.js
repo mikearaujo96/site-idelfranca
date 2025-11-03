@@ -1,7 +1,3 @@
-/* Instituto Hand Maria — Popup de Doações (JS + HTML)
- * Uso nos cards: onclick="openDoacaoPopup()"
- * Você pode passar opções: openDoacaoPopup({ whatsapp:'5511999999999', email:'contato@...', title:'...', message:'...' })
- */
 (function () {
   const ID_BACKDROP = 'ihmDoacoesBackdrop';
   let lastFocused = null;
@@ -14,8 +10,8 @@
       'Estamos finalizando a integração de cartão e doação recorrente. ' +
       'Enquanto isso, o Pix já está ATIVO e você pode doar agora mesmo.';
 
-    const wa   = (opts && opts.whatsapp) || '5511900000000';
-    const mail = (opts && opts.email)    || 'contato@associacaoidelfranca.org';
+    const wa   = (opts && opts.whatsapp) || '5511954599252';
+    const mail = (opts && opts.email)    || 'contato@irmaidelfranca.org';
 
     const html = `
       <div class="ihm-modal-backdrop" id="${ID_BACKDROP}" aria-hidden="true">

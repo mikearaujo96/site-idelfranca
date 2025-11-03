@@ -1,5 +1,5 @@
 // API base WP
-const API_BASE = 'https://api.associacaoidelfranca.org/wp-json/wp/v2';
+const API_BASE = 'https://api.irmaidelfranca.org/wp-json/wp/v2';
 
 // DOM
 const elBuscaInput = document.getElementById('input-busca');
