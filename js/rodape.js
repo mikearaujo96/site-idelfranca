@@ -30,13 +30,13 @@ const rodapeSite = `
                 <!-- Coluna 3: Contatos -->
                 <div class="rodape-coluna">
                     <h3>Contato</h3>
-                    <p><strong>Telefone:</strong> <a href="tel:+5511900000000" target="_blank">(11) 90000-0000</a></p>
-                    <p><strong>Telefone:</strong> <a href="tel:+5511900000000" target="_blank">(11) 90000-0000</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5511940770336" target="_blank">(11) 94077-0336</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5511954599252" target="_blank">(11) 95459-9252</a></p>
                     <p><strong>E-mail:</strong> <a
-                            href="mailto:contato@associacaoidelfranca.org">contato@associacaoidelfranca.org</a></p>
+                            href="mailto:contato@irmaidelfranca.org">contato@irmaidelfranca.org</a></p>
                     <p><strong>E-mail:</strong> <a
-                            href="mailto:contato@associacaoidelfranca.org">contato@associacaoidelfranca.org</a></p>
-                    <p><strong>Endereço:</strong> Rua, n0 - Bairro São Paulo/SP</p>
+                            href="mailto:coordenacaoidelfranca@gmail.com">coordenacaoidelfranca@gmail.com</a></p>
+                    <p><strong>Endereço:</strong> R. Edalberto dos Santos, 313 - Vila Piracicaba - São Paulo/SP</p>
                 </div>
 
                 <!-- Coluna 4: Redes sociais -->
@@ -45,7 +45,7 @@ const rodapeSite = `
                     <div class="rodape-redes">
                         <a href="https://www.facebook.com/profile.php?id=100009378518512&locale=pt_BR" target="_blank"><img src="assets/icones/icon-facebook.svg" alt="Facebook"></a>
                         <a href="https://www.instagram.com/idelfranca_sede/" target="_blank"><img src="assets/icones/icon-instagram.svg" alt="Instagram"></a>
-                        <a href="https://wa.me/5511900000000" target="_blank"><img src="assets/icones/icon-whatsapp.svg" alt="WhatsApp"></a>
+                        <a href="https://wa.me/5511954599252" target="_blank"><img src="assets/icones/icon-whatsapp.svg" alt="WhatsApp"></a>
                     </div>
                 </div>
 

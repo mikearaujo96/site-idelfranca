@@ -1,19 +1,19 @@
 const menuSite = `
   <div class="contatos-rapidos">
     <div>
-      <a href="https://www.google.com/maps?q=Rua+Jose+Ferreira+Crespo,+674+-+Jardim+Sao+Vicente+-+São+Paulo" target="_blank">
+      <a href="https://www.google.com/maps/place/R.+Edalberto+dos+Santos,+313+-+Vila+Piracicaba,+S%C3%A3o+Paulo+-+SP,+08090-120/data=!4m2!3m1!1s0x94ce63d2b32e7505:0x4fbce65f54b8d659?sa=X&ved=1t:242&ictx=111" target="_blank">
         <img src="assets/icones/icon-localizacao.svg" alt="icone-localização">
-        <p>Rua, n0 - bairro - São Paulo</p>
+        <p>R. Edalberto dos Santos, 313 - Vila Piracicaba - São Paulo</p>
       </a>
-      <a href="mailto:contato@associacaoidelfranca.org" target="_blank">
+      <a href="mailto:contato@irmaidelfranca.org" target="_blank">
         <img src="assets/icones/icon-email.svg" alt="icone-email">
-        <p>contato@associacaoidelfranca.org</p>
+        <p>contato@irmaidelfranca.org</p>
       </a>
     </div>
     <div class="links-contatos-rapidos-redesociais">
       <a href="https://www.facebook.com/profile.php?id=100009378518512&locale=pt_BR" target="_blank"><img src="assets/icones/icon-facebook.svg" alt="icone-facebook"></a>
       <a href="https://www.instagram.com/idelfranca_sede/" target="_blank"><img src="assets/icones/icon-instagram.svg" alt="icone-instagram"></a>
-      <a href="https://wa.me/5511900000000" target="_blank"><img src="assets/icones/icon-whatsapp.svg" alt="icone-whatsapp"></a>
+      <a href="https://wa.me/5511954599252" target="_blank"><img src="assets/icones/icon-whatsapp.svg" alt="icone-whatsapp"></a>
     </div>
   </div>
 
